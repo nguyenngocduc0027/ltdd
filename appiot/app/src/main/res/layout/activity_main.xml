@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Lập Trình Ứng Dụng Di Động"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Nhiệt Độ : "/>
+        <TextView
+            android:id="@+id/nhietdo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="xxxx"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/denxanh"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/elipgreen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <ImageButton
+            android:id="@+id/denvang"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/elipyellow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <ImageButton
+            android:id="@+id/dendo"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/elipred"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:indeterminateOnly="false"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress" />
+        <TextView
+            android:id="@+id/textprogress"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginHorizontal="25dp"
+            android:id="@+id/button_tru"
+            android:background="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 36" />
+
+        <Button
+            android:layout_marginHorizontal="25dp"
+            android:id="@+id/button_cong"
+            android:background="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 36" />
+
+    </LinearLayout>
+
+</LinearLayout>

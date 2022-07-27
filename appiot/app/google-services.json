@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106639144707",
+    "firebase_url": "https://mobileiot-8a1a4-default-rtdb.firebaseio.com",
+    "project_id": "mobileiot-8a1a4",
+    "storage_bucket": "mobileiot-8a1a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106639144707:android:0fc2be6e76c2656cb01b36",
+        "android_client_info": {
+          "package_name": "com.example.appiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106639144707-t9v79jpjtv1mc8ji89er623q52h61hve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJnJRG4MLoCaQFVQnvvv0SxxE1SMYAeLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106639144707-t9v79jpjtv1mc8ji89er623q52h61hve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

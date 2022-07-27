@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Lập Trình &#10; Ứng Dụng Di Động" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Đèn" FontSize="Subtitle" Padding="30,10,30,10"/>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="gr" Text="Green" CornerRadius="100" WidthRequest="100" HeightRequest="100" BackgroundColor="Green" Clicked="GreenClicked"/>
+            <Button x:Name="ylow" Text="Yellow" CornerRadius="100" WidthRequest="100" HeightRequest="100" BackgroundColor="Yellow" Clicked="YellowClicked"/>
+            <Button x:Name="r" Text="Red" CornerRadius="100" WidthRequest="100" HeightRequest="100" BackgroundColor="Red" Clicked="RedClicked"/>
+        </StackLayout>
+
+        <Label x:Name="servo" Text="Servo" FontSize="Subtitle" Padding="30,10,30,10"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button  Text="-36" CornerRadius="50" WidthRequest="100" HeightRequest="50" Clicked="Button_Clicked_Tru"/>
+            <Button  Text="+36" CornerRadius="50" WidthRequest="100" HeightRequest="50" Clicked="Button_Clicked_Cong" />
+        </StackLayout>
+        <Label Text="{Binding MyStringProperty}" FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
